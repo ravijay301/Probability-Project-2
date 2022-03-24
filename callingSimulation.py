@@ -1,6 +1,6 @@
 import math as math
 from number_gen import numberGen
-import pandas as pd
+import numpy as np
 
 #Inverse CDF of X that generates realizations of X based on u
 def invCDF(u):
@@ -53,5 +53,4 @@ for i in range(sampleSize):
     #Adds amount of call time to the sample
     sample.append(w)
 
-sampleFrame = pd.DataFrame(sample, columns = ['Values of W'])
-sampleFrame.to_csv('data')
+np.savetxt('data.txt', sample)
