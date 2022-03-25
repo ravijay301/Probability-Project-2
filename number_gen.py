@@ -19,8 +19,8 @@ class numberGen:
         x0 = 1000
         for i in range(c):
             x0 = (x0 * self.A + self.C) % self.K
-            u = x0/self.K
-        
+            
+        u = x0/self.K
         return u
 
     
