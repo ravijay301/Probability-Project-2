@@ -1,4 +1,3 @@
-import math as math
 from number_gen import numberGen
 import numpy as np
 
