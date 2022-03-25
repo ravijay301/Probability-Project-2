@@ -14,9 +14,9 @@ class numberGen:
         return u
 
     #Gets a specified random number in the sequence at position c
-    def getSpec(self, c):
+    def getSpec(self, i):
         x0 = 1000
-        for i in range(c):
+        for j in range(i):
             x0 = (x0 * self.A + self.C) % self.K
             
         u = x0/self.K
