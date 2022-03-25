@@ -6,7 +6,6 @@ class numberGen:
         self.A = 24693
         self.C = 3517
         self.K = 2**17
-        self.n = 0
 
     #Gets the next random number in the sequence
     def getNext(self):
