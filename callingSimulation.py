@@ -1,10 +1,9 @@
-import math as math
 from number_gen import numberGen
 import numpy as np
 
 #Inverse CDF of X that generates realizations of X based on u
 def invCDF(u):
-    return -12*math.log(1-u)
+    return -12*np.log(1-u)
 
 numGen = numberGen()
 
